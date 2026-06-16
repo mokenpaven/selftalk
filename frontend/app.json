@@ -1,0 +1,94 @@
+{
+  "expo": {
+    "name": "SelfTalk",
+    "slug": "selftalk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "frontend",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Capture photos for your notes",
+        "NSPhotoLibraryUsageDescription": "Select images from your gallery",
+        "NSMicrophoneUsageDescription": "Record voice notes",
+        "NSFaceIDUsageDescription": "Unlock app securely"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#141432"
+      },
+      "softwareKeyboardLayoutMode": "resize",
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.POST_NOTIFICATIONS"
+      ],
+      "package": "com.anonymous.selftalk"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#141432"
+        }
+      ],
+      "expo-font",
+      "expo-sqlite",
+      "expo-audio",
+      "expo-mail-composer",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "SelfTalk necesita acceso a tu galería para guardar imágenes.",
+          "savePhotosPermission": "SelfTalk necesita permiso para guardar imágenes en tu galería.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#000000",
+          "sounds": [
+            "./assets/sounds/bell.wav",
+            "./assets/sounds/chime.wav",
+            "./assets/sounds/marimba.wav",
+            "./assets/sounds/piano.wav"
+          ]
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
