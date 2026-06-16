@@ -1,4 +1,4 @@
-# SelfTalk 💬
+# Selftalk 💬
 
 Una **aplicación de chat privado y local** — reemplaza tu chat conmigo mismo de WhatsApp con conversaciones offline potenciadas por IA local.
 
