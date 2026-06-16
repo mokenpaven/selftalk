@@ -1,4 +1,3 @@
-```markdown
 # SelfTalk 💬
 
 Una **aplicación de chat privado y local** — reemplaza tu chat conmigo mismo de WhatsApp con conversaciones offline potenciadas por IA local.
@@ -91,4 +90,3 @@ Licencia MIT — Ver [LICENSE](LICENSE) para más detalles
 <p align="center">
   <strong>SelfTalk</strong> — Tus notas son tuyas.
 </p>
-```
